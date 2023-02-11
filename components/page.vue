@@ -59,7 +59,6 @@
 </template>
 
 <script setup>
-const menu = document.getElementById("menu")
 
 
 
