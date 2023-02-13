@@ -1,45 +1,69 @@
 <template>
 
-    <header class="flex flex-row items-center justify-between w-full px-12 pt-4 text-gray-600">
-        <div class="flex flex-row items-end justify-center">
-            <a href="#" class="text-gray-700 font-bold flex flex-row text-5xl mr-5">
+    <header class="w-full flex flex-row justify-between items-end py-2 px-4 lg:px-32 lg:py-4">
+        <div class="flex flex-row justify-between items-end">
+            <a href="#" class=" lg:mr-4">
             <img src="../assets/imgs/logo.png" class=" w-28" alt="logo images">
             </a>
-            <div class="here max-md:hidden">
-                <a href="#" class="mx-4 text-lg text-[#242464]">About us</a>
-                <a href="#" class="mx-4 text-lg text-[#242464]">Download</a>
-                <a href="#" class="text-lg text-[#242464]">Contact</a>
+            <div class="here max-lg:hidden">
+                <a href="#" class="text-[#242464] text-lg font-normal mr-8">About us</a>
+                <a href="#" class="text-[#242464] text-lg font-normal mr-8">Download</a>
+                <a href="#" class="text-[#242464] text-lg font-normal">Contact</a>
             </div> 
         </div>
         
-        <div class="max-md:hidden">
-            <a href="#" class="text-[#5555FF] text-lg">Log in</a>
-            <a href="#" class=" bg-[#5555FF] text-white px-4 py-2 rounded-md text-center ml-4">Primary action</a>
+        <div class="max-lg:hidden">
+            <a href="#" class="text-[#5555FF] mr-6 text-lg font-semibold">Log in</a>
+            <a href="#" class="bg-[#5555FF] text-white py-2 px-4 rounded-lg text-lg font-semibold">Primary action</a>
         </div>
-        <div class="links max-md:block hidden">
-            <span id="menu" class=" w-5 h-[10px] cursor-pointer">
-                <span class="bg-black h-[1px] mb-1"></span>
-                <span class="bg-black h-[1px] mb-1"></span>
-                <span class="bg-black h-[1px] mb-1"></span>
+        <div class="links lg:hidden">
+            <span id="menu" class=" w-6 cursor-pointer">
+                <span class="bg-black mb-2"></span>
+                <span class="bg-black mb-2"></span>
+                <span class="bg-black"></span>
             </span>
             <ul>
-                <li><a href="#" class="mx-4 text-lg text-[#242464]">About us</a></li>
-                <li><a href="#" class="mx-4 text-lg text-[#242464]">Download</a></li>
-                <li><a href="#" class="text-lg text-[#242464]">Contact</a></li>
+                <li><a href="#" class="text-[#242464]">About us</a></li>
+                <li><a href="#" class="text-[#242464]">Download</a></li>
+                <li><a href="#" class="text-[#242464]">Contact</a></li>
+                <li><a href="#" class="text-[#5555FF]">Log in</a></li>
+                <li><a href="#" class="text-[#5555ff]">Primary action</a></li>
             </ul>
         </div>
-
-
+        
     </header>
 
     <main>
 
-        <section>
-
+        <section class="flex flex-col w-full items-start justify-center gap-6 px-4 py-8 lg:py-20 lg:px-32 lg:gap-6 lg:flex-row lg:justify-between">
+            
+            <div class="">
+                <h2 class=" text-5xl text-[#171740] font-semibold lg:text-6xl lg:mb-8">
+                    Lorem ipsum dolor sit amet.
+                </h2>
+                <p class=" text-lg font-normal text-[#242464] lg:text-2xl lg:mb-8">
+                    Praesent placerat ipsum nec mi maximus, vel cursus mauris cursus. Vivamus cursus ante eget orci egestas malesuada.
+                </p>
+                <div class="flex flex-col justify-center items-center gap-4 lg:flex-row lg:justify-start">
+                    <a href="#" class="bg-[#5555FF] text-white py-2 px-4 w-full text-center rounded-lg text-lg font-semibold lg:w-auto lg:mr-4">Primary action</a>
+                    <a href="#" class="text-[#171740] font-semibold text-lg">Secondary action</a>
+                </div>
+            </div>
+            
+            <img src="../assets/imgs/galaxy space.jpg" alt="" class=" rounded-2xl lg:w-[588px]">
         </section>
     
-        <section>
-
+        <section class=" px-4 flex flex-col items-center gap-8 lg:px-32 lg:py-12 lg:items-start">
+            <h3 class="text-[#171740] text-3xl font-semibold">
+                Trusted by
+            </h3>
+            <div id="imgs" class="flex flex-col gap-8 items-center lg:flex-row lg:items-center lg:gap-6 lg:justify-between">
+                <img src="../assets/imgs/Monzo.png"  class="w-48 grayscale hover:grayscale-0 duration-500 hover:scale-105" alt="">
+                <img src="../assets/imgs/Zoopla.png" class="w-48 grayscale hover:grayscale-0 duration-500 hover:scale-105 lg:mx-8 " alt="">
+                <img src="../assets/imgs/Google.png" class="w-48 grayscale hover:grayscale-0 duration-500 hover:scale-105 lg:mx-8 " alt="">
+                <img src="../assets/imgs/Nike.png"   class="w-48 grayscale hover:grayscale-0 duration-500 hover:scale-105 lg:mx-8 " alt="">
+                <img src="../assets/imgs/Amazon.png" class="w-48 grayscale hover:grayscale-0 duration-500 hover:scale-105" alt="">
+            </div>
         </section>
     
         <section>
@@ -65,6 +89,7 @@
 </script>
 
 <style scoped>
+
 .links {
     position: relative;
 }
