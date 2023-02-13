@@ -50,7 +50,7 @@
                 </div>
             </div>
             
-            <img src="../assets/imgs/galaxy space.jpg" alt="" class=" rounded-2xl lg:w-[588px]">
+            <img src="../assets/imgs/galaxy-space.jpg" alt="" class=" rounded-2xl lg:w-[588px]">
         </section>
     
         <section class=" px-4 flex flex-col items-center gap-8 lg:px-32 lg:py-12 lg:items-start">
