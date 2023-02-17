@@ -67,7 +67,7 @@
         </section>
     
         <section class="flex flex-col items-start py-8 px-4 gap-6 lg:flex-row lg:px-32 lg:py-12">
-            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-d duration-300">
+            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-r duration-300">
                 <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl" alt="place holder image">
                 <div class="flex flex-col gap-2 items-start px-2 py-4">
                     <h3 class=" text-2xl font-semibold text-[#171740]">
@@ -81,7 +81,7 @@
                     Button
                 </button>
             </div>
-            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-d duration-300">
+            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-r duration-300">
                 <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl" alt="place holder image">
                 <div class="flex flex-col gap-2 items-start px-2 py-4">
                     <h3 class=" text-2xl font-semibold text-[#171740]">
@@ -95,7 +95,7 @@
                     Button
                 </button>
             </div>
-            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-d duration-300">
+            <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-r duration-300">
                 <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl" alt="place holder image">
                 <div class="flex flex-col gap-2 items-start px-2 py-4">
                     <h3 class=" text-2xl font-semibold text-[#171740]">
@@ -111,10 +111,145 @@
             </div>
         </section>
     
+        <section class="flex flex-col items-start justify-center py-12 px-4 gap-6 lg:flex-row lg:px-32 lg:py-12">
+
+            <div class=" flex flex-col items-start py-6 px-8 gap-4 bg-white rounded-2xl shadow-md w-full hover:bg-[#5555ff] duration-300 manga-r manga-l">
+                <h1 class=" font-semibold text-3xl text-[#171740]">
+                    Free
+                </h1>
+
+                <p class="flex flex-row gap-2 items-center text-[#171740] font-normal text-3xl">
+                    <span class=" font-semibold text-5xl">
+                        £0
+                    </span>
+                    / month
+                </p>
+
+                <div class="flex flex-col items-center py-4">
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+                    
+                    <p class="font-normal text-[#171740] text-lg">
+                        ❌ Lorem ipsum dolor
+                    </p>
+
+                </div>
+
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                    Sign up
+                </button>
+            </div>
+
+            <div class=" flex flex-col items-start py-6 px-8 gap-4 bg-white rounded-2xl shadow-md w-full hover:bg-[#5555ff] duration-300 manga-r manga-l">
+                <h1 class=" font-semibold text-3xl text-[#171740]">
+                    Standard
+                </h1>
+
+                <p class="flex flex-row gap-2 items-center text-[#171740] font-normal text-3xl">
+                    <span class=" font-semibold text-5xl">
+                        £9
+                    </span>
+                    / month
+                </p>
+
+                <div class="flex flex-col items-center py-4">
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+                    
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+
+                </div>
+
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                    Sign up
+                </button>
+            </div>
+
+            <div class=" flex flex-col items-start py-6 px-8 gap-4 bg-white rounded-2xl shadow-md w-full hover:bg-[#5555ff] duration-300 manga-r manga-l">
+                <h1 class=" font-semibold text-3xl text-[#171740]">
+                    Enterprise
+                </h1>
+
+                <p class="flex flex-row gap-2 items-center text-[#171740] font-normal text-3xl">
+                    <span class=" font-semibold text-5xl">
+                        £16
+                    </span>
+                    / month
+                </p>
+
+                <div class="flex flex-col items-center py-4">
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+                    
+                    <p class="font-normal text-[#171740] text-lg">
+                        ✔ Lorem ipsum dolor
+                    </p>
+
+                </div>
+
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                    Sign up
+                </button>
+            </div>
+        </section>
+        
+        <section class="flex flex-col items-start py-8 px-4 gap-8 lg:px-32 lg:py-12">
+            <p class="font-semibold text-4xl text-[#171740] text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="flex flex-col items-center gap-2">
+                <img src="https://via.placeholder.com/400x400.png" class=" rounded-[50%]" alt="place holder image">
+                <h3 class=" w-16 h-16">
+
+                </h3>
+                <p clas>
+
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-start justify-center py-12 px-4 gap-6 lg:px-32 lg:py-12">
+
+            <div class="">
+                <img src="" class="" alt="">
+
+                <div class="">
+
+                </div>
+            </div>
+
+            <div class="">
+        
+                <div class="">
+                    
+                </div>
+
+                <img src="" class="" alt="">
+            </div>
+
+        </section>
+
         <section>
 
         </section>
-    
+
     </main>
 
     <footer class=" bg-gray-100">
@@ -138,7 +273,7 @@ onMounted(() => {
       })
     })
 
-    const hiddenElements = document.querySelectorAll('.manga-d')
+    const hiddenElements = document.querySelectorAll('.manga-r')
     hiddenElements.forEach((el) => observer.observe(el))
   } else {
     console.log('IntersectionObserver not supported')
@@ -227,26 +362,40 @@ header #menu:hover span:last-child{
     border-bottom: 1px solid #ccc;
 }
 
-.manga-d {
+.manga-r {
     opacity: 0;
     transition: all 1s;
     transform: translateX(-100%);
     filter: blur(2px);
 }
-.manga-d:hover button {
+.manga-r:hover button {
     background-color: #FCAF3B;
 }
-
+.manga-l {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(100%);
+    filter: blur(2px);
+}
+.manga-l:hover button {
+    background-color: #FFF;
+}
 .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
 }
 
-.manga-d:nth-child(2){
+.manga-r:nth-child(2){
     transition-delay: 200ms;
 }
-.manga-d:nth-child(3){
+.manga-r:nth-child(3){
+    transition-delay: 400ms;
+}
+.manga-l:nth-child(2){
+    transition-delay: 200ms;
+}
+.manga-l:nth-child(3){
     transition-delay: 400ms;
 }
 </style>
