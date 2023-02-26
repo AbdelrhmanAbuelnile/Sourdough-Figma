@@ -33,7 +33,7 @@
         
     </header>
 
-    <main class=" bg-gray-100">
+    <main class=" bg-gray-100 overflow-hidden">
 
         <section class="flex flex-col w-full items-end justify-center gap-6 px-4 py-8 lg:py-20 lg:px-32 lg:gap-6 lg:flex-row lg:justify-between">
             
@@ -140,7 +140,7 @@
 
                 </div>
 
-                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg duration-300">
                     Sign up
                 </button>
             </div>
@@ -172,7 +172,7 @@
 
                 </div>
 
-                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg duration-300">
                     Sign up
                 </button>
             </div>
@@ -204,44 +204,72 @@
 
                 </div>
 
-                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg">
+                <button class=" py-2 px-8 bg-gray-50 font-semibold text-lg text-[#171740] w-full rounded-lg duration-300">
                     Sign up
                 </button>
             </div>
         </section>
         
-        <section class="flex flex-col items-start py-8 px-4 gap-8 lg:px-32 lg:py-12">
-            <p class="font-semibold text-4xl text-[#171740] text-center">
+        <section class="flex flex-col items-center py-8 px-4 gap-8 lg:px-32 lg:py-12">
+            <p class="font-semibold text-4xl text-[#171740] text-center manga-p duration-300">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="flex flex-col items-center gap-2">
-                <img src="https://via.placeholder.com/400x400.png" class=" rounded-[50%]" alt="place holder image">
-                <h3 class=" w-16 h-16">
-
+                <img src="../assets/imgs/Ellipse.png" class=" rounded-[50%] w-16 h-16 manga-p duration-300" alt="place holder image">
+                <h3 class="text-[#242464] text-lg font-semibold text-center manga-p duration-300">
+                    Jennifer Rowlands
                 </h3>
-                <p clas>
-
+                <p class="text-lg font-normal text-[#242464] text-center manga-p duration-300">
+                    Chief Design Office, uxtoast
                 </p>
             </div>
         </section>
 
-        <section class="flex flex-col items-start justify-center py-12 px-4 gap-6 lg:px-32 lg:py-12">
+        <section class="flex flex-col items-center justify-center p-4 gap-4 lg:px-32 lg:py-12 lg:gap-6">
 
-            <div class="">
-                <img src="" class="" alt="">
+            <div class="flex flex-col items-center p-4 gap-4 lg:flex-row lg:gap-6">
 
-                <div class="">
-
+                <div class="flex flex-col justify-center items-start gap-4 order-none manga-r lg:w-[588px] lg:h-60 lg:gap-8 lg:mr-4">
+                    <p class="font-semibold text-3xl text-[#171740] order-none text-center lg:text-[40px] lg:text-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-lg font-normal text-[#242464] order-1 text-center lg:text-2xl lg:text-left">
+                        Praesent placerat ipsum nec mi maximus, vel cursus mauris cursus. Vivamus cursus ante eget orci egestas malesuada.
+                    </p>
                 </div>
+
+                <img src="https://via.placeholder.com/400x225.png" class="order-1 rounded-2xl manga-l manga-r lg:w-[588px] lg:h-96" alt="place holder image">
+
             </div>
 
-            <div class="">
-        
-                <div class="">
-                    
+            <div class="flex flex-col items-center p-4 gap-4 lg:flex-row lg:gap-6">
+
+                <div class="flex flex-col justify-center items-start gap-4 order-1 manga-l manga-r lg:w-[588px] lg:h-60 lg:gap-8 lg:mr-4">
+                    <p class="font-semibold text-3xl text-[#171740] order-none text-center lg:text-[40px] lg:text-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-lg font-normal text-[#242464] order-1 text-center lg:text-2xl lg:text-left">
+                        Praesent placerat ipsum nec mi maximus, vel cursus mauris cursus. Vivamus cursus ante eget orci egestas malesuada.
+                    </p>
                 </div>
 
-                <img src="" class="" alt="">
+                <img src="https://via.placeholder.com/400x225.png" class="order-none rounded-2xl manga-r lg:w-[588px] lg:h-96" alt="place holder image">
+
+            </div>
+
+            <div class="flex flex-col items-center p-4 gap-4 lg:flex-row lg:gap-6">
+
+                <div class="flex flex-col justify-center items-start gap-4 order-none manga-r lg:w-[588px] lg:h-60 lg:gap-8 lg:mr-4">
+                    <p class="font-semibold text-3xl text-[#171740] order-none text-center lg:text-[40px] lg:text-left">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <p class="text-lg font-normal text-[#242464] order-1 text-center lg:text-2xl lg:text-left">
+                        Praesent placerat ipsum nec mi maximus, vel cursus mauris cursus. Vivamus cursus ante eget orci egestas malesuada.
+                    </p>
+                </div>
+
+                <img src="https://via.placeholder.com/400x225.png" class="order-1 rounded-2xl manga-l manga-r lg:w-[588px] lg:h-96" alt="place holder image">
+
             </div>
 
         </section>
@@ -273,8 +301,14 @@ onMounted(() => {
       })
     })
 
-    const hiddenElements = document.querySelectorAll('.manga-r')
-    hiddenElements.forEach((el) => observer.observe(el))
+    const hiddenElementsRight = document.querySelectorAll('.manga-r')
+    hiddenElementsRight.forEach((el) => observer.observe(el))
+    const hiddenElementsleft = document.querySelectorAll('.manga-r')
+    hiddenElementsleft.forEach((el) => observer.observe(el))
+    const hiddenElementsUp = document.querySelectorAll('.manga-p')
+    hiddenElementsUp.forEach((el) => observer.observe(el))
+    // const hiddenElementsDown = document.querySelectorAll('.manga-d')
+    // hiddenElementsDown.forEach((el) => observer.observe(el))
   } else {
     console.log('IntersectionObserver not supported')
   }
@@ -368,8 +402,21 @@ header #menu:hover span:last-child{
     transform: translateX(-100%);
     filter: blur(2px);
 }
+.manga-p {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(-100%);
+    filter: blur(2px);
+}
+.manga-d {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(100%);
+    filter: blur(2px);
+}
 .manga-r:hover button {
     background-color: #FCAF3B;
+    transition-delay: inherit;
 }
 .manga-l {
     opacity: 0;
