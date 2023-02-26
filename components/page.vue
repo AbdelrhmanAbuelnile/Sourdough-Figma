@@ -244,7 +244,7 @@
 
             <div class="flex flex-col items-center p-4 gap-4 lg:flex-row lg:gap-6">
 
-                <div class="flex flex-col justify-center items-start gap-4 order-1 manga-l manga-r lg:w-[588px] lg:h-60 lg:gap-8 lg:mr-4">
+                <div class="flex flex-col justify-center items-start gap-4 order-none manga-l manga-r lg:w-[588px] lg:h-60 lg:gap-8 lg:mr-4 lg:order-1">
                     <p class="font-semibold text-3xl text-[#171740] order-none text-center lg:text-[40px] lg:text-left">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
@@ -253,7 +253,7 @@
                     </p>
                 </div>
 
-                <img src="https://via.placeholder.com/400x225.png" class="order-none rounded-2xl manga-r lg:w-[588px] lg:h-96" alt="place holder image">
+                <img src="https://via.placeholder.com/400x225.png" class="order-1 rounded-2xl manga-r lg:w-[588px] lg:h-96 lg:order-none" alt="place holder image">
 
             </div>
 
