@@ -320,7 +320,7 @@
                 Contact Us
             </h2>
 
-            <form class="flex flex-col justify-center items-end p-6 gap-6 bg-[#242464] rounded-2xl lg:justify-between lg:py-10 lg:px-16 lg:items-center">
+            <form class="flex flex-col justify-center items-center p-6 gap-6 bg-[#242464] rounded-2xl lg:justify-between lg:py-10 lg:px-16 lg:items-center">
                 
                 <div class="flex flex-row items-center gap-4 flex-wrap lg:flex-row lg:flex-nowrap lg:justify-between lg:w-full">
                    
