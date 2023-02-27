@@ -68,7 +68,7 @@
     
         <section class="flex flex-col items-start py-8 px-4 gap-6 lg:flex-row lg:px-32 lg:py-12">
             <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-r duration-300">
-                <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl md:w-[500px]" alt="place holder image">
+                <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl" alt="place holder image">
                 <div class="flex flex-col gap-2 items-start px-2 py-4">
                     <h3 class=" text-2xl font-semibold text-[#171740]">
                         Lorem ipsum
