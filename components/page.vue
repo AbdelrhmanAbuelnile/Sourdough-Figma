@@ -314,7 +314,7 @@
 
         </section>
 
-        <section class="flex flex-col items-center py-8 px-4 gap-6 w-full justify-center manga-d">
+        <section class="flex flex-col items-center py-8 px-4 lg:px-0 gap-6 w-full justify-center manga-d">
 
             <h2 class="font-semibold text-3xl text-[#171740]">
                 Contact Us
