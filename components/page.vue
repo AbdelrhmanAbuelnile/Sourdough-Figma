@@ -35,7 +35,7 @@
 
     <main class=" bg-gray-100 overflow-hidden">
 
-        <section class="flex flex-col w-full items-end justify-center gap-6 px-4 py-8 lg:py-20 lg:px-32 lg:gap-6 lg:flex-row lg:justify-between">
+        <section class="flex flex-col w-full items-end sm:items-center max-sm:items-center justify-center gap-6 px-4 py-8 lg:py-20 lg:px-32 lg:gap-6 lg:flex-row lg:justify-between">
             
             <div class="">
                 <h2 class=" text-5xl text-[#171740] font-semibold lg:text-6xl lg:mb-8 mb-6">
@@ -44,13 +44,13 @@
                 <p class=" text-lg font-normal text-[#242464] lg:text-2xl lg:mb-8 mb-6">
                     Praesent placerat ipsum nec mi maximus, vel cursus mauris cursus. Vivamus cursus ante eget orci egestas malesuada.
                 </p>
-                <div class="flex flex-col justify-center items-center gap-4 lg:flex-row lg:justify-start">
-                    <a href="#" class="bg-[#5555FF] text-white py-2 px-4 w-full text-center rounded-lg text-lg font-semibold lg:w-auto lg:mr-4 hover:bg-[#FCAF3B] duration-300">Primary action</a>
+                <div class="flex flex-col justify-center items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                    <a href="#" class="bg-[#5555FF] text-white py-2 px-4 w-full text-center rounded-lg text-lg font-semibold sm:w-auto lg:mr-4 hover:bg-[#FCAF3B] duration-300">Primary action</a>
                     <a href="#" class="text-[#171740] font-semibold text-lg hover:text-[#5555FF]">Secondary action</a>
                 </div>
             </div>
             
-            <img src="https://via.placeholder.com/400x225.png" alt="place holder image" class=" rounded-2xl lg:w-[588px]">
+            <img src="https://via.placeholder.com/400x225.png" alt="place holder image" class=" rounded-2xl sm:w-[480px] lg:w-[588px]">
         </section>
     
         <section class=" px-4 flex flex-col items-center gap-8 lg:px-32 lg:py-12 lg:items-start">
@@ -68,7 +68,7 @@
     
         <section class="flex flex-col items-start py-8 px-4 gap-6 lg:flex-row lg:px-32 lg:py-12">
             <div class="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 hover:bg-[#5555FF] manga-r duration-300">
-                <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl" alt="place holder image">
+                <img src="https://via.placeholder.com/400x225.png" class=" rounded-2xl md:w-[500px]" alt="place holder image">
                 <div class="flex flex-col gap-2 items-start px-2 py-4">
                     <h3 class=" text-2xl font-semibold text-[#171740]">
                         Lorem ipsum
@@ -320,11 +320,11 @@
                 Contact Us
             </h2>
 
-            <form class="flex flex-col justify-center items-center p-6 gap-6 bg-[#242464] rounded-2xl lg:justify-between lg:py-10 lg:px-16 lg:items-center">
+            <form class="flex flex-col justify-center items-start p-6 gap-6 bg-[#242464] rounded-2xl lg:justify-between lg:py-10 lg:px-16 lg:items-center">
                 
-                <div class="flex flex-row items-center gap-4 flex-wrap lg:flex-row lg:flex-nowrap lg:justify-between lg:w-full">
+                <div class="flex flex-col items-center gap-4 flex-wrap lg:flex-row lg:flex-nowrap lg:justify-between w-full">
                    
-                    <div class="flex flex-col items-start gap-1 w-full lg:w-full">
+                    <div class="flex flex-col items-start gap-1 w-full">
                         <label for="FirstName" class="text-lg text-white font-normal">
                             First Name
                         </label>
@@ -333,7 +333,7 @@
                             name="FirstName"
                             id="FirstName"
                             placeholder="Alex"
-                            class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                            class="py-4 px-1 bg-[#fafaff] rounded-lg w-full">
                     </div>
 
                     <div class="flex flex-col items-start gap-1 w-full">
@@ -345,12 +345,12 @@
                             name="LastName"
                             id="LastName"
                             placeholder="Bloggs"
-                            class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                            class="py-4 px-1 bg-[#fafaff] rounded-lg w-full">
                     </div>
 
                 </div>
 
-                <div class="lg:flex lg:flex-col lg:items-start lg:justify-start lg:w-full">
+                <div class="flex flex-col items-start justify-start lg:items-start lg:justify-start w-full">
                     <label for="Email" class="text-lg text-white font-normal">
                         Email adress
                     </label>
@@ -359,10 +359,10 @@
                         name="Email"
                         id="Email"
                         placeholder="alex.blogs@email.com"
-                        class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                        class="py-4 px-1 bg-[#fafaff] rounded-lg w-full">
                 </div>
 
-                <div class="flex flex-row items-center gap-4 flex-wrap lg:justify-end">
+                <div class="flex flex-row items-center gap-4 w-full flex-wrap lg:justify-start">
 
                     <label for="message" class="text-lg text-white font-normal">
                         Your message
@@ -377,11 +377,11 @@
                     >
                     </textarea>
 
-                    <button class="w-full lg:w-2/4 bg-[#5555ff] py-3 px-8 font-semibold text-white hover:bg-[#FCAF3B] rounded-lg duration-300">
-                        Submit message
-                    </button>
-
+                    
                 </div>
+                <button class="w-full lg:w-2/4 bg-[#5555ff] py-3 px-8 font-semibold text-white hover:bg-[#FCAF3B] rounded-lg duration-300">
+                    Submit message
+                </button>
 
             </form>
 
@@ -389,8 +389,66 @@
 
     </main>
 
-    <footer class=" bg-gray-100">
+    <footer class=" flex flex-col items-start justify-center py-8 px-4 gap-6 bg-[#242464] lg:flex-row md:py-16 md:px-24 md:gap-8 md:justify-between">
+        <div class="flex flex-col items-start gap-6 md">
+            <img src="../assets/imgs/logo2.png" class=" w-28" alt="logo image">
+            <div class="flex flex-row items-start gap-4">
+                
+                <a href="#">
+                    <img src="../assets/imgs/Facebook.png"  alt="facebook logo">
+                </a>
 
+                <a href="#">
+                    <img src="../assets/imgs/Instagram.png" alt="intsagram logo">
+                </a>
+                
+                <a href="#">
+                    <img src="../assets/imgs/Twitter.png"   alt="twitter logo">
+                </a>
+
+                <a href="#">
+                <img src="../assets/imgs/YouTube.png"   alt="youtube logo">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="flex flex-col items-start gap-2">
+            <a href="#" class="text-white text-lg font-semibold">Company</a>
+            <a href="#" class="text-white text-lg">About us</a>
+            <a href="#" class="text-white text-lg">Meet the team</a>
+            <a href="#" class="text-white text-lg">Careers</a>
+            <a href="#" class="text-white text-lg">Blog</a>
+        </div>
+
+        <div class="flex flex-col items-start gap-2">
+            <a href="#" class="text-white text-lg font-semibold">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+        </div>
+
+        <div class="flex flex-col items-start gap-2">
+            <a href="#" class="text-white text-lg font-semibold">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+            <a href="#" class="text-white text-lg">Product</a>
+        </div>
+
+        <div class="flex flex-col justify-center items-center w-full gap-4 lg:w-1/5 lg:flex-row">
+            <button class="flex flex-row justify-center items-center bg-[#fafaff] py-2 text-center w-full rounded-lg hover:bg-[#FCAF3B] duration-300">
+                <img src="../assets/imgs/Apple_App_Store.png" alt="app store logo">
+                <p class="text-lg font-semibold text-black">App Store</p>
+            </button>
+
+            <button class="flex flex-row items-center justify-center bg-white w-full rounded-lg py-2 hover:bg-[#FCAF3B] duration-300">
+                <img src="../assets/imgs/Google_Play.png" alt="app store logo">
+                <p class="text-lg font-semibold text-black">Play Store</p>
+            </button>
+        </div>
+        
     </footer>
 
 </template>
