@@ -274,7 +274,116 @@
 
         </section>
 
-        <section>
+        <section class="flex flex-col items-center py-8 px-4 gap-6 lg:flex-row lg:items-start lg:py-12 lg:px-[120px] lg:gap-6">
+            
+            <div class="flex flex-col items-center p-4 gap-4 manga-r">
+                <img src="../assets/imgs/Bulb.png" class="rounded-[50%] p-4 bg-[#e0e0ff]" alt="bulb icon">
+                <div class="flex flex-col items-center py-2 px-4 gap-2 lg:">
+                    <h3 class="text-[#171740] font-semibold text-2xl text-center">
+                        Lorem, ipsum.
+                    </h3>
+                    <p class="font-normal text-lg text-[#242464] text-center">
+                        Nam in velit malesuada, porta erat a, vestibulum orci. In ac nibh malesuada, volutpat metus ac, laoreet erat.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center p-4 gap-4 manga-r">
+                <img src="../assets/imgs/Bulb.png" class="rounded-[50%] p-4 bg-[#e0e0ff]" alt="bulb icon">
+                <div class="flex flex-col items-center py-2 px-4 gap-2 lg:">
+                    <h3 class="text-[#171740] font-semibold text-2xl text-center">
+                        Lorem, ipsum.
+                    </h3>
+                    <p class="font-normal text-lg text-[#242464] text-center">
+                        Nam in velit malesuada, porta erat a, vestibulum orci. In ac nibh malesuada, volutpat metus ac, laoreet erat.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center p-4 gap-4 manga-r">
+                <img src="../assets/imgs/Bulb.png" class="rounded-[50%] p-4 bg-[#e0e0ff]" alt="bulb icon">
+                <div class="flex flex-col items-center py-2 px-4 gap-2 lg:">
+                    <h3 class="text-[#171740] font-semibold text-2xl text-center">
+                        Lorem, ipsum.
+                    </h3>
+                    <p class="font-normal text-lg text-[#242464] text-center">
+                        Nam in velit malesuada, porta erat a, vestibulum orci. In ac nibh malesuada, volutpat metus ac, laoreet erat.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col items-center py-8 px-4 gap-6 w-full justify-center manga-d">
+
+            <h2 class="font-semibold text-3xl text-[#171740]">
+                Contact Us
+            </h2>
+
+            <form class="flex flex-col justify-end items-end p-6 gap-6 bg-[#242464] rounded-2xl lg:justify-between lg:py-10 lg:px-16 lg:items-center">
+                
+                <div class="flex flex-row items-center gap-4 flex-wrap lg:flex-row lg:flex-nowrap lg:justify-between lg:w-full">
+                   
+                    <div class="flex flex-col items-start gap-1 w-full lg:w-full">
+                        <label for="FirstName" class="text-lg text-white font-normal">
+                            First Name
+                        </label>
+                        <input
+                            type="text"
+                            name="FirstName"
+                            id="FirstName"
+                            placeholder="Alex"
+                            class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                    </div>
+
+                    <div class="flex flex-col items-start gap-1 w-full">
+                        <label for="LastName" class="text-lg text-white font-normal">
+                            Last Name
+                        </label>
+                        <input
+                            type="text"
+                            name="LastName"
+                            id="LastName"
+                            placeholder="Bloggs"
+                            class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                    </div>
+
+                </div>
+
+                <div class="lg:flex lg:flex-col lg:items-start lg:justify-start lg:w-full">
+                    <label for="Email" class="text-lg text-white font-normal">
+                        Email adress
+                    </label>
+                    <input
+                        type="email"
+                        name="Email"
+                        id="Email"
+                        placeholder="alex.blogs@email.com"
+                        class="py-4 px-1 bg-[#fafaff] rounded-lg lg:w-full">
+                </div>
+
+                <div class="flex flex-row items-center gap-4 flex-wrap lg:justify-end">
+
+                    <label for="message" class="text-lg text-white font-normal">
+                        Your message
+                    </label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Please enter your message"
+                        class="py-4 px-1 bg-[#fafaff] rounded-lg w-full h-1/4"
+                    >
+                    </textarea>
+
+                    <button class="w-full lg:w-2/4 bg-[#5555ff] py-3 px-8 font-semibold text-white hover:bg-[#FCAF3B] rounded-lg duration-300">
+                        Submit message
+                    </button>
+
+                </div>
+
+            </form>
 
         </section>
 
@@ -307,6 +416,8 @@ onMounted(() => {
     hiddenElementsleft.forEach((el) => observer.observe(el))
     const hiddenElementsUp = document.querySelectorAll('.manga-p')
     hiddenElementsUp.forEach((el) => observer.observe(el))
+    const hiddenElementsDown = document.querySelectorAll('.manga-d')
+    hiddenElementsDown.forEach((el) => observer.observe(el))
     // const hiddenElementsDown = document.querySelectorAll('.manga-d')
     // hiddenElementsDown.forEach((el) => observer.observe(el))
   } else {
@@ -411,7 +522,7 @@ header #menu:hover span:last-child{
 .manga-d {
     opacity: 0;
     transition: all 1s;
-    transform: translateY(100%);
+    transform: translateX(100%);
     filter: blur(2px);
 }
 .manga-r:hover button {
@@ -444,5 +555,10 @@ header #menu:hover span:last-child{
 }
 .manga-l:nth-child(3){
     transition-delay: 400ms;
+}
+input::placeholder ,textarea::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: #5d5dc5;
 }
 </style>
