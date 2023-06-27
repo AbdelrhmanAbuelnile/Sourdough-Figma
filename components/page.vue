@@ -454,34 +454,34 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+// import { onMounted } from 'vue'
 
-onMounted(() => {
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show')
-        } else {
-          entry.target.classList.remove('show')
-        }
-      })
-    })
+// onMounted(() => {
+//   if ('IntersectionObserver' in window) {
+//     const observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('show')
+//         } else {
+//           entry.target.classList.remove('show')
+//         }
+//       })
+//     })
 
-    const hiddenElementsRight = document.querySelectorAll('.manga-r')
-    hiddenElementsRight.forEach((el) => observer.observe(el))
-    const hiddenElementsleft = document.querySelectorAll('.manga-r')
-    hiddenElementsleft.forEach((el) => observer.observe(el))
-    const hiddenElementsUp = document.querySelectorAll('.manga-p')
-    hiddenElementsUp.forEach((el) => observer.observe(el))
-    const hiddenElementsDown = document.querySelectorAll('.manga-d')
-    hiddenElementsDown.forEach((el) => observer.observe(el))
-    // const hiddenElementsDown = document.querySelectorAll('.manga-d')
-    // hiddenElementsDown.forEach((el) => observer.observe(el))
-  } else {
-    console.log('IntersectionObserver not supported')
-  }
-})
+//     const hiddenElementsRight = document.querySelectorAll('.manga-r')
+//     hiddenElementsRight.forEach((el) => observer.observe(el))
+//     const hiddenElementsleft = document.querySelectorAll('.manga-r')
+//     hiddenElementsleft.forEach((el) => observer.observe(el))
+//     const hiddenElementsUp = document.querySelectorAll('.manga-p')
+//     hiddenElementsUp.forEach((el) => observer.observe(el))
+//     const hiddenElementsDown = document.querySelectorAll('.manga-d')
+//     hiddenElementsDown.forEach((el) => observer.observe(el))
+//     // const hiddenElementsDown = document.querySelectorAll('.manga-d')
+//     // hiddenElementsDown.forEach((el) => observer.observe(el))
+//   } else {
+//     console.log('IntersectionObserver not supported')
+//   }
+// })
 </script>
 
 
@@ -565,7 +565,7 @@ header #menu:hover span:last-child{
     border-bottom: 1px solid #ccc;
 }
 
-.manga-r {
+/* .manga-r {
     opacity: 0;
     transition: all 1s;
     transform: translateX(-100%);
@@ -618,5 +618,5 @@ input::placeholder ,textarea::placeholder {
     font-weight: 400;
     font-size: 18px;
     color: #5d5dc5;
-}
+} */
 </style>
